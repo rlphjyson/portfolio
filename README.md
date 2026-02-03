@@ -73,23 +73,6 @@ I enjoy working in fast-moving environments, collaborating closely with product 
 
 ---
 
-## 💼 Experience Snapshot
-
-- **Senior Flutter / Frontend Engineer (Startup)**
-  - Led the development of the entire frontend across web and mobile
-  - Owned frontend architecture and delivery
-  - Handled cloud hosting and deployment infrastructure
-  - Worked closely with product and backend teams
-
-- **Frontend / Mobile Engineer across multiple startups**
-  - Built and shipped production apps in fast-paced environments
-  - Worked on MVPs, internal tools, and customer-facing platforms
-  - Took features from concept to production
-
-- **Open-source contributor**
-  - Contributed to community-driven projects and shared reusable tools
-
----
 
 ## 🌍 Location & Work Setup
 
