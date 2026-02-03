@@ -1,0 +1,97 @@
+{
+  "data": [
+    {
+      "name": "Flutter",
+      "content": [
+        "Flutter is my {{primary}} development framework for building {{high-quality}} cross-platform mobile applications.",
+        "I use Flutter to build {{scalable}}, {{maintainable}}, and {{production-ready}} apps for both {{iOS}} and {{Android}} from a single codebase.",
+        "I have extensive experience with {{Bloc}} and {{Riverpod}} for state management, focusing on {{clean architecture}} and long-term maintainability.",
+        "I've led Flutter projects from {{architecture}} to {{App Store / Play Store}} deployment and ongoing iteration.",
+        "If Flutter were a tool, it would be my {{daily driver}}."
+      ],
+      "snippet": "dart"
+    },
+    {
+      "name": "React Native",
+      "content": [
+        "React Native allows me to build {{cross-platform}} mobile applications using {{JavaScript}} and {{TypeScript}}.",
+        "I've used it in production apps that integrate with {{REST APIs}}, {{GraphQL}}, and native device features.",
+        "My experience with React Native complements my Flutter background and helps me adapt quickly to different stacks.",
+        "If Flutter is my strength, React Native is my {{reliable alternative}}."
+      ],
+      "snippet": "tsx"
+    },
+    {
+      "name": "Frontend Development",
+      "content": [
+        "My frontend experience spans {{mobile}} and {{web}} platforms with a strong focus on {{UX}}, {{performance}}, and {{maintainability}}.",
+        "I've built interfaces using {{React}}, {{Next.js}}, and modern frontend tooling.",
+        "I value {{clean UI architecture}}, predictable state, and close collaboration with designers and product teams."
+      ],
+      "snippet": null
+    },
+    {
+      "name": "Backend Development",
+      "content": [
+        "I've built and maintained backends using {{Node.js}}, {{Express}}, {{Spring Boot}}, and {{Laravel}}.",
+        "My backend work includes {{REST APIs}}, {{GraphQL}}, {{authentication}}, and {{database design}}.",
+        "I focus on writing {{clean}}, {{secure}}, and {{scalable}} backend systems that support real production traffic."
+      ],
+      "snippet": "mjs"
+    },
+    {
+      "name": "Databases",
+      "content": [
+        "I've worked with {{PostgreSQL}}, {{MySQL}}, and other {{SQL-based}} databases in production environments.",
+        "I'm comfortable designing {{schemas}}, writing {{optimized queries}}, and integrating databases into backend services.",
+        "I value correctness, data integrity, and long-term maintainability."
+      ],
+      "snippet": "sql"
+    },
+    {
+      "name": "Cloud & Infrastructure",
+      "content": [
+        "I have hands-on experience deploying and maintaining systems on {{AWS}}, {{GCP}}, and {{Azure}}.",
+        "My experience includes {{cloud hosting}}, {{environment configuration}}, {{CI/CD}}, and {{infrastructure ownership}}.",
+        "I've taken responsibility for frontend infrastructure and cloud setup in startup environments."
+      ],
+      "snippet": null
+    },
+    {
+      "name": "Docker",
+      "content": [
+        "Docker is a core part of my workflow for {{local development}}, {{testing}}, and {{deployment}}.",
+        "I use Docker to ensure {{consistent environments}} across teams and stages.",
+        "It helps me move faster while reducing environment-related issues."
+      ],
+      "snippet": null
+    },
+    {
+      "name": "Git",
+      "content": [
+        "Git is my primary tool for {{version control}} and {{team collaboration}}.",
+        "I've worked with {{feature branching}}, {{code reviews}}, and {{remote-first}} teams.",
+        "Clear commits and good collaboration practices matter to me."
+      ],
+      "snippet": null
+    },
+    {
+      "name": "C / C++ / Arduino",
+      "content": [
+        "I have experience with {{C}}, {{C++}}, and {{Arduino}} for {{low-level}} and {{embedded}} programming.",
+        "This background helps me better understand {{performance}}, {{memory}}, and how software interacts with hardware.",
+        "While not my primary focus today, it strongly shapes how I think as an engineer."
+      ],
+      "snippet": "ino"
+    },
+    {
+      "name": "Software Architecture",
+      "content": [
+        "I care deeply about {{architecture}}, {{code quality}}, and {{long-term maintainability}}.",
+        "I've designed systems using {{clean architecture}}, {{modular design}}, and well-defined boundaries.",
+        "Good architecture enables teams to move fast without breaking things."
+      ],
+      "snippet": null
+    }
+  ]
+}

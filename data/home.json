@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "content": [
+        "Hi, I'm {{Ralph Burgos}} 👋",
+        "A {{Senior Frontend}} software engineer from the {{Philippines}}."
+      ]
+    },
+    {
+      "content": [
+        "Most of my professional experience is focused on {{mobile}} and {{frontend}} development, with Flutter as my main strength.",
+        "I’ve also worked with {{React}}, {{Next.js}}, and modern web technologies to build scalable products."
+      ]
+    },
+    {
+      "content": [
+        "I have strong experience in {{application architecture}}, {{state management}}, and building maintainable systems for growing products.",
+        "I enjoy taking ownership of features end-to-end, from technical decisions to production delivery."
+      ]
+    },
+    {
+      "content": [
+        "I’ve led frontend development in startup environments, including owning {{frontend infrastructure}} and {{cloud hosting}} setups.",
+        "I value clean code, clear communication, and building products that solve real problems."
+      ]
+    },
+    {
+      "content": [
+        "{{Click}} a section on the left to learn more about my {{work}} and {{experience}}.",
+        "You can also {{navigate}} using the {{arrow keys}} or {{keyboard shortcuts}}."
+      ]
+    }
+  ]
+}

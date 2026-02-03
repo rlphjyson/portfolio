@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "name": "Flutter Template Clean Architecture",
+      "images": ["../images/flutter-template-screenshot.png"],
+      "year": 2024,
+      "githubUrl": "https://github.com/rlphjyson/Flutter-Template.git",
+      "content": [
+        "Products Viewer is a {{Flutter-based products catalog application}} built using the {{DummyJSON Products API}} to demonstrate real-world data consumption and UI rendering.",
+        "The app is architected using {{Clean Architecture principles}} and {{Flutter BLoC state management}}, ensuring {{clear separation of concerns}}, {{scalable code structure}}, and a {{maintainable, testable development approach}}."
+      ],
+      "technologies": [
+        "{{Flutter}}",
+        "Clean Architecture",
+        "BLOC"
+      ]
+    },
+    {
+      "name": "Companion App",
+      "year": 2024,
+      "githubUrl": "https://github.com/rlphjyson/companion",
+     "content": [
+      "Companion is a {{Flutter-powered AI assistant app}} built with the {{Gemini API}} and submitted to the {{Google Gemini Competition 2024}}, designed to help users understand the world around them in real time.",
+      "The app enables users to {{read foreign signs}}, {{extract and understand small texts}}, and {{ask contextual questions}} using AI, while integrating {{speech-to-text}} and {{text-to-speech}} for a {{hands-free, accessible user experience}}."
+    ],
+      "technologies": ["{{Flutter}}", "Gemini API"]
+    },
+    {
+      "name": "Ralph GPT",
+      "images": ["../images/ralphgpt.png"],
+      "year": 2023,
+      "githubUrl": "https://github.com/rlphjyson/RalphGPT",
+      "content": [
+        "RalphGPT is a {{Discord-based AI assistant bot}} powered by the {{GPT-3 text-davinci-003 model}}, built to bring intelligent and conversational AI directly into community servers.",
+        "The bot enables users to {{ask questions}}, {{generate high-quality text responses}}, and {{assist with everyday tasks}} inside Discord, offering a {{seamless AI-powered chat experience}} through simple and natural interactions."
+     ],  
+      "technologies": [
+        "{{NodeJs}}",
+        "{{Discord API}}",
+        "OPENAI API"
+      ]
+    },
+    {
+      "name": "Wordle Flutter Clone",
+      "year": 2023,
+      "githubUrl": "https://github.com/rlphjyson/flutter_wordle.git",
+      "content": [
+       "Wordle Clone is a {{Flutter-based word puzzle game}} inspired by the classic Wordle experience, built to deliver a {{simple, fast, and engaging gameplay}} on mobile.",
+       "The app challenges players to {{guess the hidden word}}, provides {{real-time visual feedback}}, and demonstrates {{clean UI design}}, {{game logic implementation}}, and {{state management in Flutter}}."
+     ],
+      "technologies": ["{{Flutter}}", "{{Dart}}"]
+    },
+    {
+      "name": "Domain Information Checker",
+      "year": 2023,
+      "githubUrl": "https://github.com/rlphjyson/Domain-Info-Checker",
+      "content": [
+        "Domain Information Checker is a {{web-based domain lookup tool}} built with {{Next.js}} and {{TypeScript}}, designed to provide quick and reliable insights into domain details.",
+        "The app integrates the {{WhoIsAPI}} to {{retrieve domain registration data}}, {{ownership information}}, and {{expiration details}}, offering a {{clean, fast, and user-friendly experience}}."
+     ],
+      "technologies": ["{{NextJS}}", "{{TypeScript}}"]
+    }
+  ]
+}
