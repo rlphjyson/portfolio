@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>rlphjyson</title>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4dd0e1"/>
+      <stop offset="1" stop-color="#c792ea"/>
+    </linearGradient>
+  </defs>
+  <rect x="16" y="16" width="480" height="480" rx="104" fill="#0a0a0a"/>
+  <rect x="16" y="16" width="480" height="480" rx="104" fill="none" stroke="#4dd0e1" stroke-width="14" opacity=".9"/>
+  <circle cx="96" cy="92" r="17" fill="#ff5c57"/>
+  <circle cx="148" cy="92" r="17" fill="#ffb74d"/>
+  <circle cx="200" cy="92" r="17" fill="#39ff14"/>
+  <path d="M136 196 L236 288 L136 380" fill="none" stroke="url(#g)" stroke-width="46" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="268" y="344" width="124" height="44" rx="10" fill="#39ff14"/>
+</svg>
