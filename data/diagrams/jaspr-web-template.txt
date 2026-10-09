@@ -1,0 +1,15 @@
+GET /app
+  │
+  ├─ shelf: logRequests → security headers (CSP, HSTS, referrer policy)
+  ├─ shelf: DemoBackend.sessionFor(request)   ← reads the httpOnly cookie
+  ├─ shelf: guard — no session? 302 to /login?redirect=/app   (no protected HTML is generated)
+  ├─ build RequestScope { config, path, user, theme, flags, projects }
+  ├─ Jaspr: App(scope) → Router matches /app
+  │           → AsyncBuilder awaits ProjectRepository.fetchDashboard()
+  │             (bound to InProcessProjectRepository — reads the dataset, no HTTP hop)
+  │           → DashboardPage renders complete HTML
+  │           → DashboardView (@client) props are serialised into the document
+  └─ Response: full HTML, `cache-control: private`, `vary: cookie`
+       │
+       └─ browser: main.client.dart hydrates DashboardView with the embedded props.
+                   No refetch. No loading spinner. Works from the SW cache.

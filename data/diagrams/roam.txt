@@ -1,0 +1,25 @@
+┌─────────────────────── Flutter (mobile/) ────────────────────────┐
+│                                                                  │
+│   UI  ──▶  BLoC  ──▶  Use Cases  ──▶  Repositories               │
+│                                            │                     │
+│                                            ▼                     │
+│                                   Drift / SQLite  ◀── source of  │
+│                                            │          truth      │
+│                                            ▼                     │
+│                                     Sync Engine                  │
+└────────────────────────────────────────────┼─────────────────────┘
+                                             │  REST  (idempotent,
+                                             │         cursor-based)
+┌────────────────────────────────────────────┼─────────────────────┐
+│                Go modular monolith (backend/)                    │
+│                                            ▼                     │
+│   auth · trips · itinerary · places · preferences                │
+│   recommendations · reviews · documents · sync                   │
+│   offlinepackages · providers                                    │
+│                        │                                         │
+│      ┌─────────────────┼──────────────────┬──────────────┐       │
+│      ▼                 ▼                  ▼              ▼       │
+│  PostgreSQL        Object storage    External providers  (Redis  │
+│  + PostGIS         (S3-compatible)   (Google Places)     only if │
+│                                                        justified)│
+└──────────────────────────────────────────────────────────────────┘

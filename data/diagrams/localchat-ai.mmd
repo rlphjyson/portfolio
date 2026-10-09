@@ -1,0 +1,18 @@
+flowchart LR
+    subgraph Desktop [Electron]
+        UI[Next.js frontend]
+    end
+
+    subgraph Backend [FastAPI backend]
+        API[REST: conversations, messages]
+        Stream[chat_stream.py]
+        DB[(SQLite\nconversations, messages)]
+    end
+
+    Ollama[(Ollama\nlocal model server)]
+
+    UI -- REST + SSE --> API
+    API --> DB
+    API --> Stream
+    Stream -- streaming HTTP --> Ollama
+    Stream -- SSE tokens --> UI

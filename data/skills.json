@@ -1,97 +1,96 @@
 {
   "data": [
     {
-      "name": "Flutter",
+      "id": "frontend",
+      "name": "Mobile & Frontend",
+      "icon": "flutter",
       "content": [
-        "Flutter is my {{primary}} development framework for building {{high-quality}} cross-platform mobile applications.",
-        "I use Flutter to build {{scalable}}, {{maintainable}}, and {{production-ready}} apps for both {{iOS}} and {{Android}} from a single codebase.",
-        "I have extensive experience with {{Bloc}} and {{Riverpod}} for state management, focusing on {{clean architecture}} and long-term maintainability.",
-        "I've led Flutter projects from {{architecture}} to {{App Store / Play Store}} deployment and ongoing iteration.",
-        "If Flutter were a tool, it would be my {{daily driver}}."
+        "{{Flutter}} is my daily driver. I've shipped production apps to the {{App Store and Play Store}} and run a monorepo of {{5 production apps}}.",
+        "On the web I build with {{React}} and {{Next.js}}, and lately {{Jaspr}} for server-rendered Dart.",
+        "I care about {{reusable UI systems}}: Cairn UI is a 65-component Flutter library with an engineered token system."
       ],
-      "snippet": "dart"
+      "items": ["flutter", "dart", "bloc", "riverpod", "react", "reactnative", "nextjs", "typescript", "javascript", "jaspr", "tailwindcss", "electron", "genui", "html", "css"]
     },
     {
-      "name": "React Native",
+      "id": "backend",
+      "name": "Backend",
+      "icon": "go",
       "content": [
-        "React Native allows me to build {{cross-platform}} mobile applications using {{JavaScript}} and {{TypeScript}}.",
-        "I've used it in production apps that integrate with {{REST APIs}}, {{GraphQL}}, and native device features.",
-        "My experience with React Native complements my Flutter background and helps me adapt quickly to different stacks.",
-        "If Flutter is my strength, React Native is my {{reliable alternative}}."
+        "I build APIs in {{Go}}, {{FastAPI}}, {{Node.js / Express}} and {{Laravel}}.",
+        "My starter kits show how I like backends shaped: {{hexagonal layering}}, constructor injection, typed clients generated from {{OpenAPI}}, idempotency keys and graceful shutdown."
       ],
-      "snippet": "tsx"
+      "items": ["go", "fastapi", "python", "nodejs", "express", "laravel", "php", "openapi", "sse"]
     },
     {
-      "name": "Frontend Development",
+      "id": "architecture",
+      "name": "System Design & Architecture",
+      "icon": null,
+      "glyph": "◫",
       "content": [
-        "My frontend experience spans {{mobile}} and {{web}} platforms with a strong focus on {{UX}}, {{performance}}, and {{maintainability}}.",
-        "I've built interfaces using {{React}}, {{Next.js}}, and modern frontend tooling.",
-        "I value {{clean UI architecture}}, predictable state, and close collaboration with designers and product teams."
+        "{{Clean Architecture}} everywhere, with boundaries enforced by tests rather than good intentions.",
+        "I enjoy the hard cases: {{offline-first}} sync with outboxes and per-entity conflict resolution, streaming agent events, and trust boundaries around LLM output."
       ],
-      "snippet": null
+      "items": ["cleanarch", "hexagonal", "offlinefirst", "sse", "mcp"]
     },
     {
-      "name": "Backend Development",
+      "id": "data",
+      "name": "Database & Data",
+      "icon": "postgresql",
       "content": [
-        "I've built and maintained backends using {{Node.js}}, {{Express}}, {{Spring Boot}}, and {{Laravel}}.",
-        "My backend work includes {{REST APIs}}, {{GraphQL}}, {{authentication}}, and {{database design}}.",
-        "I focus on writing {{clean}}, {{secure}}, and {{scalable}} backend systems that support real production traffic."
+        "{{PostgreSQL}} is my default, with {{sqlc}} or {{SQLAlchemy 2.0 async}} and real migrations.",
+        "Also {{MongoDB}}, {{MySQL}}, {{SQLite}} and on-device stores like {{Drift}} and {{Hive}}, plus {{Chroma}} for vector search."
       ],
-      "snippet": "mjs"
+      "items": ["postgresql", "mongodb", "mysql", "sqlite", "sqlalchemy", "drift", "hive", "chroma"]
     },
     {
-      "name": "Databases",
+      "id": "security",
+      "name": "Security & Auth",
+      "icon": "jsonwebtokens",
       "content": [
-        "I've worked with {{PostgreSQL}}, {{MySQL}}, and other {{SQL-based}} databases in production environments.",
-        "I'm comfortable designing {{schemas}}, writing {{optimized queries}}, and integrating databases into backend services.",
-        "I value correctness, data integrity, and long-term maintainability."
+        "{{JWT}} access tokens with refresh rotation and {{reuse detection}}, {{OAuth2}} sign-in, and {{role-based access control}}.",
+        "Also IAM policies and {{UI-level data masking}} for sensitive data."
       ],
-      "snippet": "sql"
+      "items": ["jwt", "oauth", "rbac", "masking"]
     },
     {
-      "name": "Cloud & Infrastructure",
+      "id": "devops",
+      "name": "Cloud & DevOps",
+      "icon": "docker",
       "content": [
-        "I have hands-on experience deploying and maintaining systems on {{AWS}}, {{GCP}}, and {{Azure}}.",
-        "My experience includes {{cloud hosting}}, {{environment configuration}}, {{CI/CD}}, and {{infrastructure ownership}}.",
-        "I've taken responsibility for frontend infrastructure and cloud setup in startup environments."
+        "{{AWS}} and {{Google Cloud}}, containerised with {{Docker}}.",
+        "Mobile release automation with {{GitHub Actions + Fastlane}}: build, sign, test, ship, cutting manual release effort by {{80%}}.",
+        "{{Firebase}} Analytics, FCM and Remote Config for staged rollouts, and {{Sentry}} for error tracking."
       ],
-      "snippet": null
+      "items": ["aws", "gcp", "docker", "githubactions", "fastlane", "firebase", "sentry"]
     },
     {
-      "name": "Docker",
+      "id": "ai",
+      "name": "AI Engineering",
+      "icon": "claude",
       "content": [
-        "Docker is a core part of my workflow for {{local development}}, {{testing}}, and {{deployment}}.",
-        "I use Docker to ensure {{consistent environments}} across teams and stages.",
-        "It helps me move faster while reducing environment-related issues."
+        "I build on {{Claude}}: the API, the Agent SDK and headless Claude Code.",
+        "That includes {{RAG}} pipelines with cited answers, seventeen {{MCP servers}} behind a gateway, a live {{multi-agent dashboard}}, {{generative UI}} compiled into native Flutter widgets, and fully local models via {{Ollama}}."
       ],
-      "snippet": null
+      "items": ["claude", "anthropic", "mcp", "rag", "genui", "ollama"]
     },
     {
-      "name": "Git",
+      "id": "testing",
+      "name": "Testing & Quality",
+      "icon": "pytest",
       "content": [
-        "Git is my primary tool for {{version control}} and {{team collaboration}}.",
-        "I've worked with {{feature branching}}, {{code reviews}}, and {{remote-first}} teams.",
-        "Clear commits and good collaboration practices matter to me."
+        "Unit, widget, {{golden}} and integration tests on mobile, plus {{pytest}} and {{Vitest}} on the web and backend.",
+        "CI on every repo: strict type checking, lint, tests and build smoke tests."
       ],
-      "snippet": null
+      "items": ["golden", "pytest", "vitest", "githubactions"]
     },
     {
-      "name": "C / C++ / Arduino",
+      "id": "tools",
+      "name": "Tools",
+      "icon": "neovim",
       "content": [
-        "I have experience with {{C}}, {{C++}}, and {{Arduino}} for {{low-level}} and {{embedded}} programming.",
-        "This background helps me better understand {{performance}}, {{memory}}, and how software interacts with hardware.",
-        "While not my primary focus today, it strongly shapes how I think as an engineer."
+        "{{Git}} and {{GitHub}} for everything, {{Neovim}} motions in my fingers (try them here), {{Figma}} for design hand-off, and {{Bash}} glue."
       ],
-      "snippet": "ino"
-    },
-    {
-      "name": "Software Architecture",
-      "content": [
-        "I care deeply about {{architecture}}, {{code quality}}, and {{long-term maintainability}}.",
-        "I've designed systems using {{clean architecture}}, {{modular design}}, and well-defined boundaries.",
-        "Good architecture enables teams to move fast without breaking things."
-      ],
-      "snippet": null
+      "items": ["git", "github", "neovim", "figma", "bash"]
     }
   ]
 }

@@ -1,0 +1,23 @@
+flowchart LR
+    subgraph Frontend [Next.js frontend]
+        UI[Dashboard / Review feed]
+    end
+
+    subgraph Backend [FastAPI backend]
+        OAuth[GitHub OAuth login]
+        Webhook[Webhook receiver]
+        Engine[Review engine]
+    end
+
+    GH[GitHub API + webhooks]
+    Claude[claude -p\nheadless CLI]
+    DB[(SQLite\nusers, repos, PRs, reviews)]
+
+    UI -- REST --> Backend
+    OAuth <--> GH
+    GH -- PR webhook --> Webhook
+    Webhook -- fetch diff --> GH
+    Webhook --> Engine
+    Engine -- subprocess --> Claude
+    Backend --> DB
+    UI -- "Post to GitHub" --> GH

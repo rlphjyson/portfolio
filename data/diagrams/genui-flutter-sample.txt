@@ -1,0 +1,22 @@
+   user types a prompt
+           │
+           ▼
+   GenerateUiUseCase ──── validates, checks for an API key, records telemetry
+           │
+           ▼
+   ClaudeUiGenerationRepository
+           │
+           ▼
+   ClaudeApiClient ─────── POST /v1/messages
+           │                 tools:       [ render_ui ]  ← recursive JSON Schema
+           │                 tool_choice: { type: "tool", name: "render_ui" }
+           │                 (retries, backoff, error classification)
+           ▼
+   tool_use block  { "title": …, "root": { … } }
+           │
+           ▼
+   UiSpecCodec.decode ──── the trust boundary: untrusted JSON → UiSpec
+           │
+           ├──────────────► Hive (offline history, stored as JSON text)
+           ▼
+   GenUiRenderer ───────── UiSpec → live Flutter widget tree

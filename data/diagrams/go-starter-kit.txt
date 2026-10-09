@@ -1,0 +1,28 @@
+                    ┌───────────────────────────────────────┐
+   HTTP request     │            cmd/api (main)             │
+        │           │   builds every dependency, in order   │
+        ▼           └───────────────────┬───────────────────┘
+┌──────────────────┐                    │ constructs
+│ handler/http     │                    ▼
+│  router          │   ┌────────────────────────────────────┐
+│  middleware      │──▶│            usecase                 │
+│  DTOs            │   │  AuthService, NoteService,         │
+│  error mapping   │   │  FeatureService                    │
+└──────────────────┘   │                                    │
+                       │  declares the interfaces it needs: │
+                       │  UserRepository, NoteRepository,   │
+                       │  Hasher, TokenIssuer, Clock …      │
+                       └──────┬──────────────────┬──────────┘
+                              │ uses             │ implemented by
+                              ▼                  ▼
+                       ┌─────────────┐   ┌───────────────────────┐
+                       │   domain    │   │ repository/postgres   │
+                       │             │   │ repository/memory     │
+                       │ entities,   │   │ auth (bcrypt, JWT)    │
+                       │ validation, │   │ analytics, observ.    │
+                       │ invariants, │   └───────────────────────┘
+                       │ sentinels   │
+                       │             │   adapters depend on the
+                       │ imports:    │   domain, never on usecase
+                       │ stdlib+uuid │
+                       └─────────────┘

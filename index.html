@@ -1,229 +1,179 @@
-<!Doctype html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-theme="rlphjyson">
 
 <head>
     <meta name="0cred-id" content="01e24af6-ad8e-4de9-9cb4-fe625eb96ab1" />
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0d1117">
-    <meta name="msapplication-navbutton-color" content="#0d1117" />
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="author" content="Ralph Burgos" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta name="msapplication-navbutton-color" content="#0a0a0a" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="author" content="Ralph Jason Burgos" />
     <meta name="description"
-        content="Hi, I'm a passionate software engineer from Philippines. Check out my work and get in touch over here. ;)" />
+        content="Ralph Jason Burgos, Senior Software Engineer from the Philippines. Flutter, Next.js, Go, FastAPI and AI tooling on Claude. SSH into the portfolio and explore with vim motions." />
 
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Ralph Burgos - Software Engineer">
-    <meta property="og:image" content="/images/social-banner.jpg">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ralph Burgos - Senior Software Engineer" />
+    <meta property="og:image" content="/images/social-banner.png" />
     <meta property="og:description"
-        content="Hi, I'm an experienced software engineer from Philippines. Check out my work and get in touch over here ;)">
-    <meta property="og:locale" content="en_US">
-
+        content="Senior Software Engineer: Flutter, Next.js, Go, FastAPI and AI tooling. A terminal-style portfolio you can drive with vim motions." />
+    <meta property="og:locale" content="en_US" />
 
     <link href="images/favicon-light.ico" rel="icon" media="(prefers-color-scheme: light)" />
-    <link href="images/favicon-light.ico" rel="icon" media="(prefers-color-scheme: dark)" />
-    <link rel="preload" as="font" href="fonts/fira-mono-v14-latin-regular.woff2" type="font/otf"
-        crossorigin="anonymous">
-    <link rel="preload" as="font" href="fonts/fira-mono-v14-latin-700.woff2" type="font/otf" crossorigin="anonymous">
-    <link id="min-style" rel="stylesheet" type="text/css" href="css/tui.css">
-    <script src="js/loader/loader.js"></script>
-    <title>Ralph Burgos - Software Engineer</title>
+    <link href="images/favicon-dark.ico" rel="icon" media="(prefers-color-scheme: dark)" />
+    <link rel="preload" as="font" href="fonts/fira-mono-v14-latin-regular.woff2" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" as="font" href="fonts/fira-mono-v14-latin-700.woff2" type="font/woff2" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/tui.css" />
+    <script>
+        // Apply the saved colorscheme before first paint so there is no flash.
+        try {
+            var t = localStorage.getItem("rlphjyson:theme");
+            if (t) document.documentElement.setAttribute("data-theme", t);
+        } catch (e) { }
+    </script>
+    <title>Ralph Burgos - Senior Software Engineer</title>
 </head>
 
-<body class="darkmode">
-    <div id="main-container">
-        <div class="nav-container">
-            <img id="nav-logo" loading="eager" src="images/social-banner.png" alt="RLPHJSON" decoding="async" />
-            <div id="hamburger-menu">
-                <input class="checkbox" type="checkbox" name="hamburger-toggle" aria-label="Mobile menu toggle" />
-                <div class="hamburger-lines">
-                    <span class="line line1"></span>
-                    <span class="line line2"></span>
-                    <span class="line line3"></span>
-                </div>
-            </div>
-        </div>
-        <div id="section-container">
-            <div id="left-section">
-                <header class="container selected-frame" id="home">
-                    <div class="container-content">
-                        <div class="title decorating-text">
-                            <p>
-                                Home
-                            </p>
-                            <div></div>
-                        </div>
-                        <p id="home-section-paragraph">
-                            Hello! I'm <span class="text-blue">Ralph Burgos</span>, a <span class="text-orange">Senior Frontend Developer</span> and <span class="text-orange">Software Engineer</span> from the <span class="text-green">Philippines</span> :)
-                        </p>
-                        <p id="mobile-help">
-                            <span class="text-green">Press</span> around to <span class="text-orange">explore</span>
-                            the website.
-                        </p>
-                    </div>
-                </header>
-                <div class="container" id="experience">
-                    <div class="container-content">
-                        <div id="experience-title" class="title decorating-text">
-                            <p>
-                                Experience
-                            </p>
-                            <div></div>
-                        </div>
-                        <div id="experience-index" class="list-index decorating-text">
-                            <p>1 of 5</p>
-                            <div></div>
-                        </div>
-                        <div class="ui-list">
-                            <div>
-                                <div>Flutter Developer</div>
-                                <div>@ <span class="text-orange">Kindred Health Inc.</span></div>
-                            </div>
-                            <div>
-                                <div>Fullstack Engineer</div>
-                                <div>@ <span class="text-orange">PiNetworks Limited</span></div>
-                            </div>
-                            <div>
-                                <div>Frontend Engineer</div>
-                                <div>@<span class="text-orange">EK Consulting and Management Services Inc.</span></div>
-                            </div>
-                            <div>
-                                <div>Flutter Developer</div>
-                                <div>@<span class="text-orange">Xtendly Philippines Inc.</span></div>
-                            </div>
-                            <div>
-                                <div>Junior Software Engineer</div>
-                                <div>@<span class="text-orange">Servscale Technologies Inc.</span></div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="container" id="projects">
-                    <div class="container-content">
-                        <div class="title decorating-text">
-                            <p>Projects</p>
-                            <div></div>
-                        </div>
-                        <div class="list-index decorating-text">
-                            <p>1 of 10</p>
-                            <div></div>
-                        </div>
-                        <div class="ui-list">
-                            <div>Flutter Template</div>
-                            <div>Companion</div>
-                            <div>Ralph GPT</div>
-                            <div>Wordle Flutter Clone</div>
-                            <div>Domain Information Checker</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container" id="skills">
-                    <div class="container-content">
-                        <div id="skills-title" class="title decorating-text">
-                            <p>
-                                Skills - Tools
-                            </p>
-                            <div></div>
-                        </div>
-                        <div id="skills-index" class="list-index decorating-text">
-                            <p>1 of 10</p>
-                            <div></div>
-                        </div>
-                        <div class="ui-list">
-                            <div><img src="images/flutter.svg" alt="" decoding="async" />Flutter</div>
-                            <div><img src="images/react.svg" alt="" decoding="async" />React Native</div>
-                            <div><img src="images/html.svg" alt="" decoding="async" />Frontend Development</div>
-                            <div><img src="images/node.svg" alt="" decoding="async" />Backend Development</div>
-                            <div><img src="images/psql.svg" alt="" decoding="async" />Databases</div>
-                            <div><img src="images/aws.svg" alt="" decoding="async" />Cloud & Infrastructure</div>
-                            <div><img src="images/gh.svg" alt="" decoding="async" />Docker</div>
-                            <div><img src="images/git.svg" alt="" decoding="async" />Git</div>
-                            <div><img src="images/arduino.svg" alt="" decoding="async" />C / C++ / Arduino</div>
-                            <div><img src="images/test.svg" alt="" decoding="async" />Software Architecture</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="right-section">
-                <div class="container h-fill" id="main-content">
-                    <div class="container-content">
-                        <div id="logo-container">
-                            <img loading="eager" src="images/social-banner.png" id="logo" alt="RLPHJSON" decoding="async" />
-                        </div>
-                        <div class="outer-paragraph-container">
-                            <div class="inner-paragraph-container">
-                                <div>
-                                    <p>Hi, I'm <span class="text-blue">Ralph</span> Burgos</p>
-                                    <p>A <span class="text-orange">Senior Frontend Developer</span> and 
-                                        <span class="text-orange">Software Engineer</span>.
-                                    </p>
-                                </div>
-                                <div>
-                                    <p>
-                                        I specialize in building <span class="text-white">mobile-first</span>,
-                                        <span class="text-white">scalable</span> applications using Flutter,
-                                        React Native, and modern web technologies.
-                                    </p>
-                                </div>
-                                <div>
-                                    <p>
-                                        I also enjoy low-level programming with
-                                        <span class="text-white">C / C++</span> and working on
-                                        <span class="text-white">Arduino</span> projects.
-                                    </p>
-                                </div>
-                                <div>
-                                    <p>
-                                        I'm comfortable working across the stack — mobile, web, backend,
-                                        cloud, and infrastructure.
-                                    </p>
-                                </div>
-                                <div id="desktop-help">
-                                    <p><span class="text-white">Click</span> on a section on the left to learn
-                                        more about
-                                        my <span class="text-blue">work</span> and past <span
-                                            class="text-orange">experiences</span>.</p>
-                                    <p>You can also <span class="text-orange">navigate</span> through the
-                                        sections using
-                                        the <span class="text-blue">arrow keys</span> or <span class="text-orange">Vim
-                                            motions</span>.</p>
-                                </div>
-                                <p id="mobile-help">
-                                    <span class="text-green">Press</span> the menu button at the top-right of the
-                                    screen
-                                    to
-                                    start <span class="text-orange">exploring</span>
-                                    the website.
-                                </p>
-                                <!-- <div class="bible-verse"> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <footer class="container text-blue" id="footer">
-            <div class="footer-item" id="footer-help">
-                &lt;pgup&gt;/&lt;pgdown&gt;: Scroll,
-                &lt;left&gt;/&lt;right&gt;: Switch section,
-                &lt;1-4&gt;: Jump to section,
-                &lt;up&gt;/&lt;down&gt;: Switch item
-                <span class="text-green">
-                    (or just use the mouse)
-                </span>
-            </div>
-            <div class="footer-item">
-                <a class="text-blue" href="https://github.com/rlphjyson/" target="_blank">
-                    GitHub
-                </a>
-                <a class="text-green" href="https://www.linkedin.com/in/ralph-jason-burgos/" target="_blank">
-                    LinkedIn
-                </a>
-            </div>
-        </footer>
+<body>
+    <!-- ssh / boot screen -->
+    <div id="boot" role="status" aria-live="polite">
+        <pre id="boot-log"></pre>
+        <div id="boot-skip">press any key to skip</div>
     </div>
+
+    <div id="app" aria-hidden="true">
+        <!-- tmux-ish status bar -->
+        <header id="tabline">
+            <button id="drawer-toggle" type="button" aria-label="Toggle panels" aria-controls="sidebar">☰</button>
+            <span class="host">guest<span class="at">@</span>rlphjyson<span class="at">:</span><span class="dir">~</span></span>
+            <nav id="tabs" aria-label="Sections"></nav>
+            <span class="spacer"></span>
+            <span class="right">
+                <a class="hide-sm" href="https://github.com/rlphjyson" target="_blank" rel="noopener">github</a>
+                <a class="hide-sm" href="https://www.linkedin.com/in/ralph-jason-burgos/" target="_blank" rel="noopener">linkedin</a>
+                <button id="help-btn" type="button" aria-label="Help">[?]</button>
+            </span>
+        </header>
+
+        <main id="workspace">
+            <aside id="sidebar" aria-label="Panels"></aside>
+            <section id="main" class="box active" aria-label="Content">
+                <div class="box-title" id="main-title">~/README.md</div>
+                <div id="viewer" tabindex="-1" aria-live="polite"></div>
+                <div class="box-footer" id="main-footer">[readonly]</div>
+            </section>
+        </main>
+
+        <div id="statusline" aria-hidden="true">
+            <span class="seg" id="mode" data-mode="NORMAL">NORMAL</span>
+            <span class="seg branch">⎇ main</span>
+            <span class="seg file" id="st-file">~/README.md</span>
+            <span class="fill"></span>
+            <span class="seg dim" id="st-search"></span>
+            <span class="seg dim theme-seg" id="st-theme"></span>
+            <span class="seg pos" id="st-pos">1/1</span>
+            <span class="seg dim" id="st-pct">Top</span>
+            <span class="seg clock" id="st-clock">--:--</span>
+        </div>
+
+        <div id="cmdline">
+            <span id="cmd-prefix"></span>
+            <input id="cmd-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false"
+                aria-label="Command line" hidden />
+            <span id="cmd-msg">Type <kbd>:help</kbd> or press <kbd>?</kbd> for keybindings.</span>
+        </div>
+
+        <nav id="keybar" aria-label="Quick keys">
+            <button type="button" data-key="drawer" aria-label="Panels">☰</button>
+            <button type="button" data-key="prev" aria-label="Previous item">k ↑</button>
+            <button type="button" data-key="next" aria-label="Next item">j ↓</button>
+            <button type="button" data-key="/" aria-label="Search">/</button>
+            <button type="button" data-key=":" aria-label="Command">:</button>
+            <button type="button" data-key="term" aria-label="Terminal">&gt;_</button>
+            <button type="button" data-key="?" aria-label="Help">?</button>
+        </nav>
+    </div>
+
+    <div id="wildmenu" hidden></div>
+
+    <!-- telescope-style fuzzy finder -->
+    <div id="telescope" class="overlay" hidden>
+        <div class="window" role="dialog" aria-modal="true" aria-label="Search">
+            <div class="window-bar">
+                <span class="dots"><i></i><i></i><i></i></span>
+                <span class="title">telescope · find anything</span>
+                <button class="close" type="button" data-close aria-label="Close">✕</button>
+            </div>
+            <div class="tele-body">
+                <div class="tele-left">
+                    <div class="tele-prompt">
+                        <span class="pfx">/</span>
+                        <input id="tele-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false"
+                            placeholder="projects, skills, companies, tech…" aria-label="Search query" />
+                        <span class="count" id="tele-count"></span>
+                    </div>
+                    <ul id="tele-results" role="listbox"></ul>
+                </div>
+                <div id="tele-preview"></div>
+            </div>
+            <div class="tele-hints"><kbd>↑</kbd><kbd>↓</kbd> or <kbd>Ctrl-n</kbd><kbd>Ctrl-p</kbd> move · <kbd>Enter</kbd> open · <kbd>Esc</kbd> close · then <kbd>n</kbd>/<kbd>N</kbd> cycle results</div>
+        </div>
+    </div>
+
+    <!-- help -->
+    <div id="help" class="overlay" hidden>
+        <div class="window" role="dialog" aria-modal="true" aria-label="Help">
+            <div class="window-bar">
+                <span class="dots"><i></i><i></i><i></i></span>
+                <span class="title">:help rlphjyson</span>
+                <button class="close" type="button" data-close aria-label="Close">✕</button>
+            </div>
+            <div class="help-body" id="help-body"></div>
+        </div>
+    </div>
+
+    <!-- interactive shell -->
+    <div id="terminal" class="overlay" hidden>
+        <div class="window" role="dialog" aria-modal="true" aria-label="Terminal">
+            <div class="window-bar">
+                <span class="dots"><i></i><i></i><i></i></span>
+                <span class="title">guest@rlphjyson: ~ — zsh</span>
+                <button class="close" type="button" data-close aria-label="Close">✕</button>
+            </div>
+            <div id="term-out" aria-live="polite"></div>
+            <div class="term-input-row">
+                <span class="ps1" id="term-ps1"></span>
+                <input id="term-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false"
+                    aria-label="Shell input" />
+            </div>
+        </div>
+    </div>
+
+    <!-- screenshot viewer -->
+    <div id="lightbox" class="overlay" hidden>
+        <div class="window" role="dialog" aria-modal="true" aria-label="Screenshot viewer">
+            <div class="window-bar">
+                <span class="dots"><i></i><i></i><i></i></span>
+                <span class="title" id="lb-title">feh</span>
+                <button class="close" type="button" data-close aria-label="Close">✕</button>
+            </div>
+            <div class="lb-stage">
+                <img id="lb-img" alt="" />
+                <button class="lb-nav lb-prev" type="button" aria-label="Previous screenshot">◀ h</button>
+                <button class="lb-nav lb-next" type="button" aria-label="Next screenshot">l ▶</button>
+            </div>
+            <div class="lb-caption"><span id="lb-caption"></span><span id="lb-count"></span></div>
+        </div>
+    </div>
+
+    <noscript>
+        <p style="padding:1rem">This portfolio is a terminal UI and needs JavaScript. Find me on
+            <a href="https://github.com/rlphjyson">GitHub</a> or
+            <a href="https://www.linkedin.com/in/ralph-jason-burgos/">LinkedIn</a>.</p>
+    </noscript>
+
+    <script src="js/tui.js" defer></script>
 </body>
 
 </html>

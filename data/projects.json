@@ -1,64 +1,631 @@
 {
   "data": [
     {
-      "name": "Flutter Template Clean Architecture",
-      "images": ["../images/flutter-template-screenshot.png"],
-      "year": 2024,
-      "githubUrl": "https://github.com/rlphjyson/Flutter-Template.git",
-      "content": [
-        "Products Viewer is a {{Flutter-based products catalog application}} built using the {{DummyJSON Products API}} to demonstrate real-world data consumption and UI rendering.",
-        "The app is architected using {{Clean Architecture principles}} and {{Flutter BLoC state management}}, ensuring {{clear separation of concerns}}, {{scalable code structure}}, and a {{maintainable, testable development approach}}."
+      "id": "cairn-ui",
+      "name": "Cairn UI",
+      "tagline": "An engineered Flutter component library",
+      "date": "Sep 2026",
+      "category": "flutter · design system",
+      "github": "https://github.com/rlphjyson/cairn_ui",
+      "demo": "https://rlphjyson.github.io/cairn_site/",
+      "stack": [
+        "flutter",
+        "dart",
+        "golden",
+        "githubactions"
       ],
-      "technologies": [
-        "{{Flutter}}",
-        "Clean Architecture",
-        "BLOC"
+      "images": [
+        {
+          "src": "images/projects/cairn-ui/01-catalog-forms.webp",
+          "caption": "The catalogue, Forms section"
+        },
+        {
+          "src": "images/projects/cairn-ui/02-catalog-overlays-dark.webp",
+          "caption": "Overlays in the dark theme"
+        },
+        {
+          "src": "images/projects/cairn-ui/03-catalog-tokens.webp",
+          "caption": "The token scales"
+        },
+        {
+          "src": "images/projects/cairn-ui/04-catalog-feedback-dark.webp",
+          "caption": "Data table, calendar and toasts, dark theme"
+        }
+      ],
+      "content": [
+        "A modern, accessible {{Flutter component library}} built on a design token system that is actually engineered.",
+        "Colours are authored in {{OKLCH}} with a matched dark theme, the radius scale is derived proportionally from a single number, and the type scale survives text scaling.",
+        "{{65 components}}, no runtime dependencies beyond Flutter itself, and {{golden tests}} in both themes holding all of it in place."
+      ],
+      "highlights": [
+        "No component hardcodes a number that should come from a token",
+        "Every place CSS-shaped design meets Flutter's rendering model is resolved explicitly and documented",
+        "80 golden images lock the light and dark output down"
       ]
     },
     {
-      "name": "Companion App",
-      "year": 2024,
-      "githubUrl": "https://github.com/rlphjyson/companion",
-     "content": [
-      "Companion is a {{Flutter-powered AI assistant app}} built with the {{Gemini API}} and submitted to the {{Google Gemini Competition 2024}}, designed to help users understand the world around them in real time.",
-      "The app enables users to {{read foreign signs}}, {{extract and understand small texts}}, and {{ask contextual questions}} using AI, while integrating {{speech-to-text}} and {{text-to-speech}} for a {{hands-free, accessible user experience}}."
-    ],
-      "technologies": ["{{Flutter}}", "Gemini API"]
-    },
-    {
-      "name": "Ralph GPT",
-      "images": ["../images/ralphgpt.png"],
-      "year": 2023,
-      "githubUrl": "https://github.com/rlphjyson/RalphGPT",
+      "id": "flutter-mcp-toolkit",
+      "name": "Flutter MCP Toolkit",
+      "tagline": "12 MCP servers for the Flutter lifecycle",
+      "date": "Aug 2026",
+      "category": "flutter · ai · mcp",
+      "github": "https://github.com/rlphjyson/flutter-mcp-toolkit",
+      "stack": [
+        "python",
+        "mcp",
+        "flutter",
+        "claude",
+        "firebase",
+        "githubactions",
+        "fastlane"
+      ],
+      "diagram": {
+        "file": "data/diagrams/flutter-mcp-toolkit.txt",
+        "type": "ascii",
+        "title": "Flutter Engineering MCP"
+      },
+      "images": [
+        {
+          "src": "images/projects/flutter-mcp-toolkit/01-list-servers-and-index.webp",
+          "caption": "Real CLI output: indexing a Flutter project"
+        },
+        {
+          "src": "images/projects/flutter-mcp-toolkit/02-mobilesec-tools-and-scan.webp",
+          "caption": "Real CLI output: a mobile security scan"
+        },
+        {
+          "src": "images/projects/flutter-mcp-toolkit/03-gateway-tools.webp",
+          "caption": "Real CLI output: Flutter Engineering MCP gateway"
+        }
+      ],
       "content": [
-        "RalphGPT is a {{Discord-based AI assistant bot}} powered by the {{GPT-3 text-davinci-003 model}}, built to bring intelligent and conversational AI directly into community servers.",
-        "The bot enables users to {{ask questions}}, {{generate high-quality text responses}}, and {{assist with everyday tasks}} inside Discord, offering a {{seamless AI-powered chat experience}} through simple and natural interactions."
-     ],  
-      "technologies": [
-        "{{NodeJs}}",
-        "{{Discord API}}",
-        "OPENAI API"
+        "Twelve {{Model Context Protocol}} servers covering the {{Flutter/mobile development lifecycle}}, plus one generic CLI client that speaks to all of them over the real protocol.",
+        "Codebase intelligence, UI testing on real devices, crash analysis, {{Crashlytics}}, architecture review, dependency management, {{mobile security}}, API contract checking, test coverage, performance, {{CI/CD}} and code migration.",
+        "A {{Flutter Engineering MCP gateway}} connects to all twelve as an MCP client and re-exposes their tools behind {{one connection}}, so an agent like Claude Code can drive a Flutter project's entire toolchain."
+      ],
+      "highlights": [
+        "Indexes widgets, BLoC/Cubit/Riverpod state, routes and the import graph",
+        "Flags Clean Architecture layering violations and compares OpenAPI specs against Dart models",
+        "Each server is an independently installable Python package over stdio"
       ]
     },
     {
-      "name": "Wordle Flutter Clone",
-      "year": 2023,
-      "githubUrl": "https://github.com/rlphjyson/flutter_wordle.git",
+      "id": "cairn-site",
+      "name": "Cairn Site",
+      "tagline": "Docs site for Cairn UI, built with Cairn UI",
+      "date": "Sep – Oct 2026",
+      "category": "flutter web · docs",
+      "github": "https://github.com/rlphjyson/cairn_site",
+      "demo": "https://rlphjyson.github.io/cairn_site/",
+      "stack": [
+        "flutter",
+        "dart",
+        "githubactions"
+      ],
+      "images": [
+        {
+          "src": "images/projects/cairn-site/01-landing-1-hero-dark.webp",
+          "caption": "Landing template: hero"
+        },
+        {
+          "src": "images/projects/cairn-site/02-landing-2-features-dark.webp",
+          "caption": "Landing template: features"
+        },
+        {
+          "src": "images/projects/cairn-site/03-docs-1-introduction-dark.webp",
+          "caption": "Docs template: introduction"
+        },
+        {
+          "src": "images/projects/cairn-site/04-dashboard-1-overview-dark.webp",
+          "caption": "Dashboard template: overview"
+        },
+        {
+          "src": "images/projects/cairn-site/05-shop-1-shop-dark.webp",
+          "caption": "Mobile shop template"
+        }
+      ],
       "content": [
-       "Wordle Clone is a {{Flutter-based word puzzle game}} inspired by the classic Wordle experience, built to deliver a {{simple, fast, and engaging gameplay}} on mobile.",
-       "The app challenges players to {{guess the hidden word}}, provides {{real-time visual feedback}}, and demonstrates {{clean UI design}}, {{game logic implementation}}, and {{state management in Flutter}}."
-     ],
-      "technologies": ["{{Flutter}}", "{{Dart}}"]
+        "The marketing and documentation site for Cairn UI, a {{Flutter web app}} whose own chrome is built {{with the library it documents}}.",
+        "Nav, tabs, the {{Ctrl+K command palette}}, dialogs, toasts and the directory data table are all Cairn widgets doing a real job. If a component regresses upstream, this site breaks, and that is the point.",
+        "It ships every component as a live preview, five composed blocks, and {{five whole-app templates}}: e-commerce, dashboard, blog, docs and SaaS landing."
+      ],
+      "highlights": [
+        "Dogfooding surfaced and fixed a latent crash in CairnContextMenu upstream",
+        "Deep-linkable routes on GitHub Pages via a 404.html SPA fallback",
+        "CI plus automated deploy workflows"
+      ]
     },
     {
-      "name": "Domain Information Checker",
-      "year": 2023,
-      "githubUrl": "https://github.com/rlphjyson/Domain-Info-Checker",
+      "id": "mcp-toolkit-ai",
+      "name": "MCP Toolkit AI",
+      "tagline": "17 MCP servers, a gateway, and a CLI",
+      "date": "Aug 2026",
+      "category": "ai · mcp · python",
+      "github": "https://github.com/rlphjyson/mcp-toolkit-ai",
+      "stack": [
+        "python",
+        "mcp",
+        "claude",
+        "chroma",
+        "sqlite",
+        "github"
+      ],
+      "diagram": {
+        "file": "data/diagrams/mcp-toolkit-ai.txt",
+        "type": "ascii",
+        "title": "Gateway topology"
+      },
+      "images": [
+        {
+          "src": "images/projects/mcp-toolkit-ai/01-gateway-tools.webp",
+          "caption": "Real CLI output: the gateway connected to 17 backends"
+        },
+        {
+          "src": "images/projects/mcp-toolkit-ai/02-list-servers.webp",
+          "caption": "Real CLI output: list-servers"
+        },
+        {
+          "src": "images/projects/mcp-toolkit-ai/03-list-tools-and-call.webp",
+          "caption": "Real CLI output: listing tools and calling one"
+        }
+      ],
       "content": [
-        "Domain Information Checker is a {{web-based domain lookup tool}} built with {{Next.js}} and {{TypeScript}}, designed to provide quick and reliable insights into domain details.",
-        "The app integrates the {{WhoIsAPI}} to {{retrieve domain registration data}}, {{ownership information}}, and {{expiration details}}, offering a {{clean, fast, and user-friendly experience}}."
-     ],
-      "technologies": ["{{NextJS}}", "{{TypeScript}}"]
+        "Seventeen {{Model Context Protocol}} servers: five general-purpose ones (semantic code search, safe SQL, GitHub Issues, dev-environment awareness, a Markdown knowledge base) plus the {{twelve Flutter/mobile servers}} from Flutter MCP Toolkit.",
+        "A {{gateway}} connects to every server as an MCP client and re-exposes all their tools behind {{one endpoint}}, namespaced so names never collide.",
+        "One generic CLI speaks to all of them over the real protocol, and Agent Ops Dashboard's agents use them as tools."
+      ],
+      "highlights": [
+        "A backend that fails to start is skipped with a warning instead of taking the gateway down",
+        "Read-only SQL is sqlparse-validated, row-capped and timeout-enforced",
+        "Semantic code search with local sentence-transformers embeddings and Chroma"
+      ]
+    },
+    {
+      "id": "agent-ops-dashboard",
+      "name": "Agent Ops Dashboard",
+      "tagline": "Watch Claude agents work, live",
+      "date": "Aug 2026",
+      "category": "ai · agents · fullstack",
+      "github": "https://github.com/rlphjyson/agent-ops-dashboard",
+      "stack": [
+        "nextjs",
+        "typescript",
+        "fastapi",
+        "python",
+        "claude",
+        "mcp",
+        "sse",
+        "sqlite",
+        "electron"
+      ],
+      "diagram": {
+        "file": "data/diagrams/agent-ops-dashboard.mmd",
+        "type": "mermaid",
+        "title": "Architecture"
+      },
+      "images": [
+        {
+          "src": "images/projects/agent-ops-dashboard/01-run-detail.webp",
+          "caption": "Live run timeline: tool calls and real results"
+        },
+        {
+          "src": "images/projects/agent-ops-dashboard/02-run-live.webp",
+          "caption": "A run mid-flight, with a Stop button"
+        },
+        {
+          "src": "images/projects/agent-ops-dashboard/03-new-run.webp",
+          "caption": "The task composer"
+        },
+        {
+          "src": "images/projects/agent-ops-dashboard/04-login.webp",
+          "caption": "Login"
+        }
+      ],
+      "content": [
+        "Submit a task in plain English and watch a {{Claude-powered agent}} work it live. Every tool call, result and reasoning step streams to the dashboard as it happens, with {{multiple runs in flight}} at once.",
+        "A {{dual agent engine}} picks the official Claude Agent SDK when an API key is set, or a headless Claude Code CLI subprocess otherwise. Both normalise into one event stream, so persistence, the {{WebSocket relay}} and the UI never know which engine ran.",
+        "The agents call {{MCP Toolkit AI}}'s servers as tools, tying the series together."
+      ],
+      "highlights": [
+        "Engine choice is automatic: Agent SDK with an API key, headless Claude Code CLI without one",
+        "Runs execute as background tasks, so POST /runs returns 202 immediately",
+        "Packaged as an Electron desktop app"
+      ]
+    },
+    {
+      "id": "docuchat-ai",
+      "name": "DocuChat AI",
+      "tagline": "Chat with your documents, with citations",
+      "date": "Aug 2026",
+      "category": "ai · rag · fullstack",
+      "github": "https://github.com/rlphjyson/docuchat-ai",
+      "stack": [
+        "nextjs",
+        "typescript",
+        "tailwindcss",
+        "fastapi",
+        "python",
+        "anthropic",
+        "rag",
+        "chroma",
+        "sqlite",
+        "jwt",
+        "docker"
+      ],
+      "diagram": {
+        "file": "data/diagrams/docuchat-ai.mmd",
+        "type": "mermaid",
+        "title": "Architecture"
+      },
+      "images": [
+        {
+          "src": "images/projects/docuchat-ai/02-dashboard.webp",
+          "caption": "Dashboard with an uploaded document"
+        },
+        {
+          "src": "images/projects/docuchat-ai/03-chat-empty.webp",
+          "caption": "Chat"
+        },
+        {
+          "src": "images/projects/docuchat-ai/01-login.webp",
+          "caption": "Login"
+        }
+      ],
+      "content": [
+        "A full-stack {{retrieval-augmented generation}} app. It ingests PDFs, text and Markdown, chunks and embeds them {{locally}}, retrieves the most relevant passages, and {{streams a cited answer}} back from Claude.",
+        "Embeddings run on-device with sentence-transformers and the vector store is embedded {{Chroma}}, so the whole thing runs with zero external services besides the Claude API.",
+        "{{JWT}} auth with documents scoped per user, and typed end to end with mypy and strict TypeScript."
+      ],
+      "highlights": [
+        "Streaming answers over SSE with inline citations back to the source chunk",
+        "pytest + httpx on the backend, Vitest + Testing Library on the frontend",
+        "One-command Docker Compose setup"
+      ]
+    },
+    {
+      "id": "prreview-ai",
+      "name": "PRReview AI",
+      "tagline": "AI code review for GitHub pull requests",
+      "date": "Aug 2026",
+      "category": "ai · devtools · fullstack",
+      "github": "https://github.com/rlphjyson/prreview-ai",
+      "stack": [
+        "nextjs",
+        "typescript",
+        "tailwindcss",
+        "fastapi",
+        "python",
+        "claude",
+        "oauth",
+        "github",
+        "sqlite"
+      ],
+      "diagram": {
+        "file": "data/diagrams/prreview-ai.mmd",
+        "type": "mermaid",
+        "title": "Architecture"
+      },
+      "images": [
+        {
+          "src": "images/projects/prreview-ai/01-review-findings.webp",
+          "caption": "A review with severity-ranked findings (demo data)"
+        },
+        {
+          "src": "images/projects/prreview-ai/03-review-findings-full.webp",
+          "caption": "Pull request feed for a connected repo (demo data)"
+        },
+        {
+          "src": "images/projects/prreview-ai/04-settings-claude.webp",
+          "caption": "Settings: Claude Code credentials"
+        },
+        {
+          "src": "images/projects/prreview-ai/02-login.webp",
+          "caption": "Sign in with GitHub"
+        }
+      ],
+      "content": [
+        "Connect a repo, open a PR, and prreview-ai fetches the diff, {{reviews it with Claude}}, and shows the findings in a dashboard.",
+        "A signed {{GitHub webhook}} triggers each review as a background task. Findings come back as {{schema-validated JSON}} with file, line and severity, not scraped from free-text model output.",
+        "{{Read-only by default}}: publishing the review as a real PR comment is a separate, explicit Post to GitHub action."
+      ],
+      "highlights": [
+        "Reuses the local Claude Code login via headless claude -p, so no per-token billing to try it",
+        "HMAC-verified webhooks and Fernet-encrypted stored tokens",
+        "The AI engine and GitHub API are both faked in tests"
+      ]
+    },
+    {
+      "id": "localchat-ai",
+      "name": "LocalChat AI",
+      "tagline": "A ChatGPT-like desktop app on a local model",
+      "date": "Aug 2026",
+      "category": "ai · desktop · local llm",
+      "github": "https://github.com/rlphjyson/localchat-ai",
+      "stack": [
+        "electron",
+        "nextjs",
+        "typescript",
+        "tailwindcss",
+        "fastapi",
+        "python",
+        "ollama",
+        "sqlite",
+        "sse"
+      ],
+      "diagram": {
+        "file": "data/diagrams/localchat-ai.mmd",
+        "type": "mermaid",
+        "title": "Architecture"
+      },
+      "images": [
+        {
+          "src": "images/projects/localchat-ai/02-conversation.webp",
+          "caption": "A conversation with syntax-highlighted code"
+        },
+        {
+          "src": "images/projects/localchat-ai/01-new-chat.webp",
+          "caption": "New chat, dark mode"
+        }
+      ],
+      "content": [
+        "A desktop chat app that runs entirely against a {{self-hosted local model}}: no API key, no per-token cost, {{no data leaving the machine}}.",
+        "{{Ollama}} serves a quantized Qwen2.5-Coder 7B on consumer hardware (an RTX 3060). The app around it adds persistence, token streaming, a real {{Stop button}}, and an {{Electron}} shell."
+      ],
+      "highlights": [
+        "Fixed a bug where a client abort cancelled the stream and silently dropped the partial reply, by persisting in a finally block",
+        "Model is swappable per conversation",
+        "Shows Ollama's own tokens/sec stat after each reply"
+      ]
+    },
+    {
+      "id": "genui-flutter",
+      "name": "GenUI Flutter",
+      "tagline": "Prompts compiled into native Flutter widgets",
+      "date": "Aug 2026",
+      "category": "flutter · ai · generative ui",
+      "github": "https://github.com/rlphjyson/genui-flutter-sample",
+      "stack": [
+        "flutter",
+        "dart",
+        "anthropic",
+        "genui",
+        "riverpod",
+        "hive",
+        "firebase",
+        "cleanarch"
+      ],
+      "diagram": {
+        "file": "data/diagrams/genui-flutter-sample.txt",
+        "type": "ascii",
+        "title": "How it works"
+      },
+      "images": [
+        {
+          "src": "images/projects/genui-flutter/01-generated-profile-card.webp",
+          "caption": "The renderer drawing the README's profile-card spec"
+        },
+        {
+          "src": "images/projects/genui-flutter/02-generated-sign-in-form.webp",
+          "caption": "A sign-in form spec, with real typed-into fields"
+        },
+        {
+          "src": "images/projects/genui-flutter/03-generated-settings-page.webp",
+          "caption": "A settings spec: switches, slider, dropdown"
+        },
+        {
+          "src": "images/projects/genui-flutter/04-home-empty-state.webp",
+          "caption": "Empty state with example prompts"
+        }
+      ],
+      "content": [
+        "Describe an interface in plain language. Claude returns a {{structured UI specification}}, and the app compiles it into {{real, native Flutter widgets at runtime}}.",
+        "Not a screenshot, not a WebView, not generated source that needs a rebuild. A generated text field is a real TextField, and a generated submit button reads back what you typed.",
+        "The model is forced into a {{tool call}} with a recursive JSON Schema, so the response is structured data. The codec that decodes it is the explicit {{trust boundary}}."
+      ],
+      "highlights": [
+        "Offline history stored in Hive",
+        "Retries, backoff and error classification in the API client",
+        "Firebase Analytics, Crashlytics and Remote Config wired in"
+      ]
+    },
+    {
+      "id": "roam",
+      "name": "Roam",
+      "tagline": "Offline-first travel companion",
+      "date": "Aug – Sep 2026",
+      "category": "flutter · go · offline-first",
+      "github": "https://github.com/rlphjyson/roam",
+      "stack": [
+        "flutter",
+        "dart",
+        "bloc",
+        "drift",
+        "sqlite",
+        "offlinefirst",
+        "go",
+        "postgresql",
+        "jwt",
+        "figma"
+      ],
+      "diagram": {
+        "file": "data/diagrams/roam.txt",
+        "type": "ascii",
+        "title": "Architecture"
+      },
+      "images": [
+        {
+          "src": "images/projects/roam/01-screens-composite.webp",
+          "caption": "Design: Home, Explore, Why 96% Match and Offline Mode"
+        },
+        {
+          "src": "images/projects/roam/02-screens-composite-planning.webp",
+          "caption": "Design: Welcome, Smart Itinerary, Trip Map and Trip Overview"
+        },
+        {
+          "src": "images/projects/roam/03-home.webp",
+          "caption": "Design: Home: next trip, ready offline"
+        },
+        {
+          "src": "images/projects/roam/04-explore-match.webp",
+          "caption": "Design: Explore with % Match recommendations"
+        },
+        {
+          "src": "images/projects/roam/05-trip-overview.webp",
+          "caption": "Design: Trip overview with budget"
+        },
+        {
+          "src": "images/projects/roam/06-offline-mode.webp",
+          "caption": "Design: Offline mode with pending sync"
+        }
+      ],
+      "content": [
+        "Plan trips, discover places matched to your interests, navigate, and manage documents and expenses, {{with no connection at all}}.",
+        "The differentiator is a {{deterministic, explainable recommendation engine}} that scores places against your interests, reviews, distance, budget and itinerary, and tells you why: {{96% Match}}, strong coffee and anime match, close to your next stop.",
+        "The local SQLite database is the {{source of truth}}. Every mutation is one atomic transaction with an outbox row, sync is {{idempotent by construction}}, and conflicts are resolved per entity type, never silently."
+      ],
+      "highlights": [
+        "Flutter + BLoC + Drift on device, a Go modular monolith on PostgreSQL + PostGIS behind it",
+        "Versioned, checksummed offline trip packages and real offline map regions",
+        "On-device full-text search over everything downloaded, built phase by phase over 100+ commits"
+      ]
+    },
+    {
+      "id": "jaspr-web-template",
+      "name": "Jaspr Web Template",
+      "tagline": "Server-rendered Dart web app template",
+      "date": "Aug 2026",
+      "category": "dart · ssr · web",
+      "github": "https://github.com/rlphjyson/jaspr-web-template",
+      "stack": [
+        "dart",
+        "jaspr",
+        "cleanarch",
+        "offlinefirst",
+        "githubactions"
+      ],
+      "diagram": {
+        "file": "data/diagrams/jaspr-web-template.txt",
+        "type": "ascii",
+        "title": "The request path"
+      },
+      "images": [
+        {
+          "src": "images/projects/jaspr-web-template/01-home-dark.webp",
+          "caption": "Meridian: server-rendered marketing home"
+        },
+        {
+          "src": "images/projects/jaspr-web-template/02-dashboard-dark.webp",
+          "caption": "Authenticated dashboard (demo data)"
+        },
+        {
+          "src": "images/projects/jaspr-web-template/03-project-detail-dark.webp",
+          "caption": "Service detail with recent deployments"
+        },
+        {
+          "src": "images/projects/jaspr-web-template/04-sign-in-dark.webp",
+          "caption": "Sign-in with httpOnly-cookie sessions"
+        }
+      ],
+      "content": [
+        "A production-shaped web template built with {{Jaspr}}, the Dart framework that compiles components to {{real DOM}} and renders them on the server.",
+        "The demo app, Meridian, pairs a server-rendered marketing site with an authenticated dashboard behind {{httpOnly-cookie sessions}} resolved before render.",
+        "{{Islands architecture}}: only seven components ship JavaScript. The entire marketing site works with JavaScript disabled."
+      ],
+      "highlights": [
+        "Offline support via a hand-written service worker",
+        "SEO done properly: canonical, Open Graph, JSON-LD, sitemap and real 404 status",
+        "224 tests plus a production build smoke test in CI"
+      ]
+    },
+    {
+      "id": "go-starter-kit",
+      "name": "Go Starter Kit",
+      "tagline": "Production-shaped Go HTTP API template",
+      "date": "Sep 2026",
+      "category": "go · backend",
+      "github": "https://github.com/rlphjyson/go-starter-kit",
+      "stack": [
+        "go",
+        "postgresql",
+        "jwt",
+        "rbac",
+        "openapi",
+        "docker",
+        "sentry",
+        "githubactions",
+        "cleanarch"
+      ],
+      "diagram": {
+        "file": "data/diagrams/go-starter-kit.txt",
+        "type": "ascii",
+        "title": "Architecture"
+      },
+      "images": [
+        {
+          "src": "images/projects/go-starter-kit/01-swagger-ui.webp",
+          "caption": "Swagger UI rendering the hand-written openapi.yaml"
+        },
+        {
+          "src": "images/projects/go-starter-kit/02-go-test-terminal.webp",
+          "caption": "Real run: go vet, build and 141 passing tests"
+        }
+      ],
+      "content": [
+        "The repository you fork when starting a new backend service and you don't want to spend two weeks rebuilding {{auth, migrations, observability and CI}}.",
+        "{{chi}} router, {{pgx + sqlc}} type-safe queries instead of an ORM, embedded golang-migrate migrations, and plain {{constructor injection}} wired in one readable function.",
+        "JWT access tokens plus opaque refresh tokens with {{rotation and reuse detection}}, RBAC on admin routes, and RFC 9457 problem documents mapped in exactly one place."
+      ],
+      "highlights": [
+        "Hand-written OpenAPI 3 spec with a generated typed Go client",
+        "Feature flags with single-flight cache refresh and stable percentage rollouts",
+        "Idempotency keys, per-request timeouts and graceful shutdown"
+      ]
+    },
+    {
+      "id": "fastapi-starter-kit",
+      "name": "FastAPI Starter Kit",
+      "tagline": "Hexagonal FastAPI template",
+      "date": "Aug 2026",
+      "category": "python · backend",
+      "github": "https://github.com/rlphjyson/fastapi-starter-kit",
+      "stack": [
+        "fastapi",
+        "python",
+        "postgresql",
+        "sqlalchemy",
+        "jwt",
+        "rbac",
+        "openapi",
+        "sentry",
+        "docker",
+        "pytest",
+        "hexagonal"
+      ],
+      "diagram": {
+        "file": "data/diagrams/fastapi-starter-kit.txt",
+        "type": "ascii",
+        "title": "Architecture"
+      },
+      "images": [
+        {
+          "src": "images/projects/fastapi-starter-kit/01-swagger-ui.webp",
+          "caption": "Swagger UI rendering the committed openapi.json"
+        },
+        {
+          "src": "images/projects/fastapi-starter-kit/02-test-suite-terminal.webp",
+          "caption": "Real run: 213 tests passing, ruff clean"
+        }
+      ],
+      "content": [
+        "A production-oriented {{FastAPI}} template built around {{hexagonal architecture}}, so you don't relitigate the same twenty decisions on every new API.",
+        "The layering is enforced by ruff {{and by tests that walk the AST}}. PostgreSQL with async SQLAlchemy 2.0 and Alembic sits behind Protocol ports.",
+        "JWT with refresh rotation and reuse detection, DB-backed {{feature flags}}, idempotency keys, structlog, rate limiting and security headers, all behind one error envelope."
+      ],
+      "highlights": [
+        "227 tests, mypy --strict, migration round-trip and a container smoke test in CI",
+        "Committed openapi.json with a generated typed Python client, kept in sync by CI",
+        "A real dependency_overrides testing pattern from one composition root"
+      ]
     }
   ]
 }

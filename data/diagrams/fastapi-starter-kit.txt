@@ -1,0 +1,20 @@
+                    ┌──────────────────────────────────────────────┐
+   HTTP request ───▶│  app/api/          routers · schemas ·       │
+                    │                    middleware · errors       │  FastAPI, Pydantic
+                    │  app/api/deps.py   ← the composition root    │
+                    └───────────────────────┬──────────────────────┘
+                                            │ calls
+                    ┌───────────────────────▼──────────────────────┐
+                    │  app/application/  use cases, DTOs           │  no framework at all
+                    │                    AuthService, NoteService… │
+                    └───────────────────────┬──────────────────────┘
+                                            │ depends on
+                    ┌───────────────────────▼──────────────────────┐
+                    │  app/domain/       entities · ports · errors │  pure Python
+                    │                    pagination                │  zero imports outward
+                    └───────────────────────▲──────────────────────┘
+                                            │ implements (structurally)
+                    ┌───────────────────────┴──────────────────────┐
+                    │  app/infrastructure/  SQLAlchemy repos, JWT, │  SQLAlchemy, PyJWT,
+                    │  bcrypt, structlog, Sentry, rate limiter     │  asyncpg, sentry-sdk
+                    └──────────────────────────────────────────────┘

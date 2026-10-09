@@ -1,0 +1,24 @@
+flowchart LR
+    subgraph Frontend [Next.js frontend]
+        UI[Chat / Dashboard UI]
+    end
+
+    subgraph Backend [FastAPI backend]
+        Auth[Auth: JWT]
+        Ingest[Ingestion: chunk + embed]
+        RAG[RAG: retrieve + stream]
+    end
+
+    Embed[sentence-transformers\nlocal embedding model]
+    Chroma[(Chroma\nvector store)]
+    DB[(SQLite\nusers + document metadata)]
+    Claude[Claude API]
+
+    UI -- REST + SSE --> Backend
+    Auth --> DB
+    Ingest --> Embed
+    Ingest --> Chroma
+    Ingest --> DB
+    RAG --> Embed
+    RAG --> Chroma
+    RAG --> Claude

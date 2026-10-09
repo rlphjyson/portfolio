@@ -1,0 +1,13 @@
+                    AI Agent
+                       │
+                Model Context Protocol
+                       │
+                       ▼
+              Flutter Engineering MCP
+       ┌───────────────┼────────────────┐
+   Code Intelligence  Architecture   Test Analysis
+   Crash Analysis     Dependency     Security Scanning
+   Performance        CI/CD          Code Migration
+       └───────────────┼────────────────┘
+                       ▼
+        Flutter Repo · GitHub Actions · Firebase · pub.dev

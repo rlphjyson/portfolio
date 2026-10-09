@@ -1,0 +1,22 @@
+{
+  "name": "Ralph Jason Burgos",
+  "handle": "rlphjyson",
+  "role": "Senior Software Engineer",
+  "location": "Tanauan, Batangas, Philippines",
+  "careerStart": "2021-02-01",
+  "email": "rlphjyson@gmail.com",
+  "github": "https://github.com/rlphjyson",
+  "linkedin": "https://www.linkedin.com/in/ralph-jason-burgos/",
+  "education": {
+    "school": "First Asia Institute of Technology and Humanities",
+    "degree": "BS Computer Engineering",
+    "date": "Aug 2018 – Jun 2022"
+  },
+  "summary": [
+    "Senior Software Engineer with {{5+ years}} of experience delivering production-grade, scalable {{cross-platform applications}} for mobile and web.",
+    "Expert in {{Flutter (Dart)}}, component-based architecture, and advanced state management ({{Bloc, Riverpod}}).",
+    "Strong background in API integration, secure authentication ({{JWT, OAuth2}}), and performance optimization.",
+    "I lead frontend initiatives, design {{reusable UI systems}}, and work closely with backend, DevOps, and product teams to ship enterprise-level solutions.",
+    "Lately I've been building {{AI-native tooling}}: RAG apps, MCP servers, agent dashboards, and generative UI on top of Claude."
+  ]
+}

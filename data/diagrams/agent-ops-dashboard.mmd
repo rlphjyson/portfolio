@@ -1,0 +1,32 @@
+flowchart LR
+    subgraph Frontend [Next.js frontend]
+        Fleet[Fleet view]
+        Detail[Run detail / live timeline]
+    end
+
+    subgraph Backend [FastAPI backend]
+        API[REST: auth, runs]
+        WS[WS: /ws/runs]
+        Runner[agent_runner.execute_run]
+        Bus[(in-process EventBus)]
+    end
+
+    Engine{AgentEngine}
+    SDK[SdkAgentEngine]
+    CLI[CliAgentEngine]
+    Toolkit[mcp-toolkit-ai's 5 MCP servers]
+    DB[(SQLite\nusers, runs, run_events)]
+
+    Fleet -- REST + WS --> API
+    Detail -- REST + WS --> API
+    API --> Runner
+    Runner --> Engine
+    Engine --> SDK
+    Engine --> CLI
+    SDK -- stdio --> Toolkit
+    CLI -- stdio --> Toolkit
+    Runner --> DB
+    Runner --> Bus
+    Bus --> WS
+    WS --> Fleet
+    WS --> Detail

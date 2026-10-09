@@ -1,64 +1,102 @@
 {
   "data": [
     {
-      "name": "Lead Frontend & Mobile Engineer",
+      "id": "kmc",
+      "role": "Mobile Engineer",
+      "company": "KMC Solutions",
+      "location": "Remote, Philippines",
+      "date": "May 2026 – Present",
+      "current": true,
+      "stack": [
+        "flutter",
+        "dart",
+        "githubactions",
+        "fastlane",
+        "firebase",
+        "claude"
+      ],
+      "content": [
+        "Architected and established a scalable {{Flutter monorepo}}, enabling shared code, modular architecture, and streamlined development across {{5 production mobile applications}}.",
+        "Designed and implemented {{CI/CD pipelines}} using GitHub Actions and Fastlane, automating build, code signing, testing, and deployment to Google Play and the App Store, {{reducing manual release effort by 80%}}.",
+        "Established a comprehensive testing strategy with {{unit, widget, golden, and integration tests}} to improve quality, reliability, and regression coverage.",
+        "Integrated {{Firebase Analytics, Cloud Messaging and Remote Config}} to support user engagement, feature flagging, staged rollouts, and data-driven product decisions.",
+        "Developed reusable {{Claude AI skills}} for Dart and Flutter workflows, improving developer productivity through AI-assisted code generation, project standards, and engineering best practices."
+      ]
+    },
+    {
+      "id": "kindred",
+      "role": "Frontend Lead – Flutter",
       "company": "Kindred Health Inc.",
-      "date": "Oct 2024 - Present",
-      "title": "Frontend Developer / Lead Flutter Engineer (Flutter, React, Next.js, TypeScript, Cloud Infrastructure)",
+      "location": "Taguig, Philippines",
+      "date": "Oct 2024 – Apr 2026",
+      "stack": [
+        "flutter",
+        "dart",
+        "nextjs",
+        "typescript",
+        "react"
+      ],
       "content": [
-        "Lead the development of all frontend applications across mobile and web, owning architecture, implementation, and long-term maintainability.",
-        "Designed and implemented scalable frontend architectures using {{BLoC}}, {{Riverpod}}, {{Clean Architecture}}, and {{MVVM}} patterns.",
-        "Owned frontend infrastructure and {{cloud hosting}} setup, ensuring stable deployments and reliable production environments.",
-        "Collaborated closely with designers and product managers to deliver features end-to-end in a fast-paced startup environment.",
-        "Mentored junior developers through code reviews and technical guidance, improving code quality and delivery consistency."
+        "Led development of cross-platform applications using {{Flutter}} and {{Next.js}}, ensuring scalability and maintainability.",
+        "Built high-performance, responsive UI for both {{mobile and web}} platforms.",
+        "Implemented {{clean architecture}} and modular component systems, improving code maintainability.",
+        "Integrated the frontend with {{REST APIs}} and backend services, ensuring seamless data flow.",
+        "{{Mentored developers}} and conducted code reviews, improving overall code quality."
       ]
     },
     {
-      "name": "Fullstack Engineer",
+      "id": "pinetworks",
+      "role": "Fullstack Engineer (Contract)",
       "company": "PiNetworks Limited",
-      "date": "Oct 2022 - Dec 2023",
-      "title": "Fullstack Engineer (Flutter, React.js, TypeScript)",
+      "location": "Remote, Maldives",
+      "date": "Oct 2023 – Oct 2024",
+      "stack": [
+        "flutter",
+        "react",
+        "reactnative",
+        "laravel",
+        "php"
+      ],
       "content": [
-        "Led frontend development for mobile and web applications used by production users in a fully remote startup team.",
-        "Researched and introduced new technologies and tools to improve development workflows and engineering standards.",
-        "Designed scalable UI architectures and optimized application performance for better responsiveness and maintainability.",
-        "Worked closely with stakeholders to deliver features quickly while maintaining clean and reliable codebases."
+        "Led frontend development using {{Flutter, React.js, and React Native}} for cross-platform applications.",
+        "Integrated applications with {{REST APIs}} and backend {{microservices}}.",
+        "Developed backend services using {{Laravel}}, supporting frontend integration."
       ]
     },
     {
-      "name": "Frontend Engineer",
-      "company": "EK Consulting and Management Services Inc.",
-      "date": "Dec 2023 - Sept 2024",
-      "title": "Frontend Engineer (Flutter, React, REST APIs)",
-      "content": [
-        "Built and optimized Flutter applications with complex UI requirements and performance-sensitive features.",
-        "Improved app performance by optimizing animations, reducing bundle size, and improving rendering efficiency.",
-        "Architected and implemented complex UI designs to improve user engagement and retention.",
-        "Collaborated with designers and product managers to deliver features under tight deadlines."
-      ]
-    },
-    {
-      "name": "Flutter Developer",
+      "id": "xtendly",
+      "role": "Flutter Developer",
       "company": "Xtendly Philippines Inc.",
-      "date": "Aug 2021 - Oct 2022",
-      "title": "Flutter Developer (Flutter, Dart, CI/CD, GitHub Actions, Fastlane)",
+      "location": "Alabang, Philippines",
+      "date": "Jan 2023 – Nov 2023",
+      "stack": [
+        "flutter",
+        "dart",
+        "githubactions",
+        "fastlane"
+      ],
       "content": [
-        "Led development of scalable and high-performance Flutter mobile applications.",
-        "Developed reusable components and internal libraries to reduce development time for new features.",
-        "Implemented {{CI/CD pipelines}} using GitHub Actions and Fastlane to streamline deployment processes.",
-        "Ensured adherence to best coding practices, security standards, and Flutter architecture patterns."
+        "Developed scalable mobile applications using {{Flutter (Dart)}}.",
+        "Built and maintained {{reusable UI components and libraries}}, accelerating feature delivery.",
+        "Implemented {{CI/CD pipelines}} using GitHub Actions and Fastlane, streamlining deployment processes.",
+        "Applied state management ({{Bloc, Riverpod}}) for scalable application architecture."
       ]
     },
     {
-      "name": "Junior Software Engineer",
+      "id": "servscale",
+      "role": "Junior Software Engineer",
       "company": "Servscale Technologies Inc.",
-      "date": "Jun 2020 - Jul 2021",
-      "title": "Junior Software Engineer (Flutter, React.js, Git)",
+      "location": "Remote, Philippines",
+      "date": "Feb 2021 – Jan 2023",
+      "stack": [
+        "flutter",
+        "react",
+        "git"
+      ],
       "content": [
-        "Developed and maintained Flutter mobile applications, improving performance and user experience.",
-        "Built responsive web applications using {{React.js}} to enhance UI functionality and usability.",
-        "Participated in debugging, troubleshooting, and code reviews to improve application reliability.",
-        "Used Git for version control and collaborative development."
+        "Developed {{Flutter}} mobile applications and {{React.js}} web applications.",
+        "Integrated {{REST APIs}} and improved application reliability.",
+        "Collaborated using {{Git-based workflows}} and code reviews."
       ]
     }
   ]

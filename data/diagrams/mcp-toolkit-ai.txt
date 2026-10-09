@@ -1,0 +1,11 @@
+AI Agent
+   │
+MCP Gateway  (gateway/mcp_gateway)
+   │
+   ├── codebase (semantic code search)
+   ├── sql (safe SQL querying)
+   ├── issues (GitHub Issues)
+   ├── devenv / kb (local dev + notes)
+   └── flutterintel, flutterui, crashlog, crashlytics, archguard, flutterdeps,
+       mobilesec, apicontract, flutestcov, flutperf, mobilecicd, flumigrate
+       (the twelve Flutter/mobile servers)

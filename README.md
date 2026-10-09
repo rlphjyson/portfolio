@@ -1,95 +1,98 @@
 # Ralph Jason Burgos — Portfolio
 
-Senior Frontend Engineer & Flutter Developer based in the Philippines.  
-I build production-ready web and mobile applications for startup teams, focusing on clean architecture, performance, and real-world usability.
+Senior Software Engineer based in the Philippines, with 5+ years building production-grade, cross-platform apps for mobile and web.
+Flutter is my daily driver. I also build with Next.js, Go and FastAPI, and lately AI tooling on Claude.
+
+The site is a terminal you "ssh" into: a lazygit-style TUI driven by vim motions, written in plain HTML, CSS and JavaScript with no build step.
 
 ---
 
-## 👋 About Me
+## Using the site
 
-I’m a frontend-focused engineer with 5+ years of professional experience working with multiple startup companies.  
-My background is mainly in **Flutter (mobile)** and **modern web frontend** using **React, Next.js, and TypeScript**, and I also handle **cloud infrastructure and deployments** when needed.
+| Key | Does |
+| --- | --- |
+| `h` `l` / `←` `→` / `Tab` | switch panel |
+| `j` `k` / `↓` `↑` | move in a list |
+| `1`…`5` | jump to a panel |
+| `gg` `G` | first / last item |
+| `Ctrl-d` `Ctrl-u` | scroll the content |
+| `/` | fuzzy finder across projects, jobs, skills and tech |
+| `n` `N` | next / previous search result |
+| `:` | command line with Tab completion and history (`:help`, `:e roam`, `:colo gruvbox`, `:gh`, `:q`) |
+| `` ` `` | a small shell over a virtual filesystem (`ls`, `cd`, `cat`, `tree`, `grep`, `open`, `git log`, `neofetch`) |
+| `Enter` / `o` / `O` / `y` | screenshots / source / live demo / yank link |
+| `t` | cycle colorschemes (rlphjyson, tokyonight, gruvbox, catppuccin, dracula, nord, matrix, paper) |
+| `?` | every keybinding |
 
-In my most recent role, I led the development of the entire frontend and owned the cloud hosting and deployment setup, taking products from early-stage ideas to stable production systems.
-
-I enjoy working in fast-moving environments, collaborating closely with product and backend teams, and building software that users can actually rely on.
-
----
-
-## 🧠 What I Do
-
-- Build and maintain scalable web frontends
-- Develop cross-platform mobile apps with Flutter
-- Design frontend architecture for growing products
-- Integrate frontend with APIs and backend services
-- Handle deployments and cloud infrastructure
-- Improve performance, UX, and developer experience
-- Work closely with designers, product managers, and backend engineers
-
----
-
-## 🛠 Tech Stack
-
-### Frontend & Mobile
-- Flutter
-- React
-- React Native
-- Next.js
-- Nuxt.js
-- TypeScript
-- JavaScript
-- HTML / CSS
-
-### State Management
-- BLoC
-- Riverpod
-
-### Backend & APIs
-- Node.js
-- Express.js
-- REST APIs
-- GraphQL
-- Spring Boot
-- PHP / Laravel
-
-### Databases
-- PostgreSQL
-- MySQL
-- SQL
-
-### Cloud & DevOps
-- AWS
-- GCP
-- Azure
-- Docker
-
-### Low-level / Hardware
-- C
-- C++
-- Arduino
-
-### Tools
-- Git
+Everything is clickable too, and on phones there's a quick-key bar and a panel drawer.
+Every view has a deep link, for example `/#/projects/roam`.
 
 ---
 
+## Projects
 
-## 🌍 Location & Work Setup
-
-- Based in the Philippines
-- Experienced working fully remote with international teams
-- Comfortable collaborating across time zones
+| Project | What it is |
+| --- | --- |
+| [Cairn UI](https://github.com/rlphjyson/cairn_ui) | 65-component Flutter library on an engineered token system, held in place by golden tests |
+| [Flutter MCP Toolkit](https://github.com/rlphjyson/flutter-mcp-toolkit) | 12 MCP servers for the Flutter lifecycle, plus a gateway and CLI |
+| [Cairn Site](https://github.com/rlphjyson/cairn_site) | Docs site for Cairn UI, built with Cairn UI ([live](https://rlphjyson.github.io/cairn_site/)) |
+| [MCP Toolkit AI](https://github.com/rlphjyson/mcp-toolkit-ai) | 17 MCP servers behind one gateway |
+| [Agent Ops Dashboard](https://github.com/rlphjyson/agent-ops-dashboard) | Watch Claude agents work live, with multiple runs in flight |
+| [DocuChat AI](https://github.com/rlphjyson/docuchat-ai) | RAG chat over your documents with cited, streamed answers |
+| [PRReview AI](https://github.com/rlphjyson/prreview-ai) | AI code review for GitHub pull requests |
+| [LocalChat AI](https://github.com/rlphjyson/localchat-ai) | ChatGPT-like desktop app on a fully local model |
+| [GenUI Flutter](https://github.com/rlphjyson/genui-flutter-sample) | Prompts compiled into native Flutter widgets at runtime |
+| [Roam](https://github.com/rlphjyson/roam) | Offline-first travel companion with an explainable recommendation engine |
+| [Jaspr Web Template](https://github.com/rlphjyson/jaspr-web-template) | Server-rendered Dart web app template |
+| [Go Starter Kit](https://github.com/rlphjyson/go-starter-kit) | Production-shaped Go HTTP API template |
+| [FastAPI Starter Kit](https://github.com/rlphjyson/fastapi-starter-kit) | Hexagonal FastAPI template |
 
 ---
 
-## 🎯 Career Focus
+## Tech stack
 
-I’m focused on growing as a **Lead Frontend Engineer**, continuing to build high-impact products for startups and global teams, and helping shape frontend architecture and engineering culture.
+- **Mobile & frontend:** Flutter, Dart, Bloc, Riverpod, React, React Native, Next.js, TypeScript, Jaspr, Tailwind CSS, Electron, generative UI
+- **Backend:** Go, FastAPI, Python, Node.js, Express.js, Laravel
+- **Architecture:** Clean and hexagonal architecture, offline-first sync, streaming (SSE / WebSockets), MCP
+- **Data:** PostgreSQL, MongoDB, MySQL, SQLite, SQLAlchemy, Drift, Hive, Chroma
+- **Security:** JWT, OAuth2, RBAC / IAM, UI-level data masking
+- **Cloud & DevOps:** AWS, Google Cloud, Docker, GitHub Actions, Fastlane, Firebase, Sentry
+- **AI:** Claude API, Claude Agent SDK, Claude Code, RAG, Ollama
+- **Testing:** unit, widget, golden and integration tests, pytest, Vitest
 
 ---
 
-## 📫 Contact
+## Editing the content
+
+All content is JSON in `data/`. No HTML changes needed.
+
+| File | Holds |
+| --- | --- |
+| `data/profile.json` | name, summary, links, education |
+| `data/experience.json` | jobs; `{{text}}` is highlighted |
+| `data/projects.json` | projects, screenshots and the architecture diagram to show |
+| `data/skills.json` | skill groups; each lists keys from `stack.json` |
+| `data/stack.json` | every technology: label plus icon (`images/stack/*.svg`) or a glyph |
+| `data/diagrams/` | architecture diagrams taken from each project's README (`.mmd` Mermaid or `.txt` ASCII) |
+
+Screenshots live in `images/projects/<project-id>/` as WebP.
+Tech icons are from [Devicon](https://devicon.dev) (MIT) and [Simple Icons](https://simpleicons.org) (CC0).
+Mermaid diagrams render client-side with [Mermaid](https://mermaid.js.org), loaded from jsDelivr only when a project with a diagram is opened. If it can't load, the diagram source is shown instead.
+
+## Running locally
+
+The site fetches its JSON, so serve the folder rather than opening the file directly:
+
+```bash
+python -m http.server 8000
+# or
+npx serve .
+```
+
+---
+
+## Contact
 
 - Email: rlphjyson@gmail.com
-
-Feel free to reach out if you’d like to collaborate or discuss opportunities.
+- GitHub: [rlphjyson](https://github.com/rlphjyson)
+- LinkedIn: [ralph-jason-burgos](https://www.linkedin.com/in/ralph-jason-burgos/)
