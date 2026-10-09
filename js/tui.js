@@ -185,7 +185,7 @@
       {
         id: "projects",
         title: "projects",
-        items: projects.map((p) => ({ id: p.id, label: p.name, icon: p.stack[0], meta: (p.date.match(/\d{4}/g) || [""]).pop() })),
+        items: projects.map((p) => ({ id: p.id, label: p.name, icon: p.stack[0], meta: p.pub ? "pub.dev" : (p.date.match(/\d{4}/g) || [""]).pop() })),
       },
       {
         id: "skills",
@@ -198,7 +198,7 @@
         items: [
           { id: "email", label: "email", glyph: "✉", meta: "mail", url: `mailto:${profile.email}`, value: profile.email },
           { id: "github", label: "github", img: "github", meta: "rlphjyson", url: profile.github, value: profile.github },
-          { id: "linkedin", label: "linkedin", glyph: "in", meta: "ralph-jason-burgos", url: profile.linkedin, value: profile.linkedin },
+          { id: "linkedin", label: "linkedin", glyph: "in", meta: "Ralph Burgos", url: profile.linkedin, value: profile.linkedin },
         ],
       },
     ];
@@ -403,6 +403,7 @@
     const next = S.data.projects[idx + 1];
     const actions = [
       p.github && `<a class="btn" href="${esc(p.github)}" target="_blank" rel="noopener"><kbd>o</kbd> source ↗</a>`,
+      p.pub && `<a class="btn" href="${esc(p.pub)}" target="_blank" rel="noopener"><kbd>p</kbd> pub.dev ↗</a>`,
       p.demo && `<a class="btn" href="${esc(p.demo)}" target="_blank" rel="noopener"><kbd>O</kbd> live demo ↗</a>`,
       p.images?.length && `<button type="button" class="btn" data-shot="0"><kbd>⏎</kbd> screenshots</button>`,
       p.github && `<button type="button" class="btn" data-yank="${esc(p.github)}"><kbd>y</kbd> yank url</button>`,
@@ -422,6 +423,7 @@
       <div class="meta-row">
         <span><b>date</b> ${esc(p.date)}</span>
         <span><b>type</b> ${esc(p.category)}</span>
+        ${p.pub ? `<span><b>package</b> <a href="${esc(p.pub)}" target="_blank" rel="noopener">pub.dev/packages/${esc(p.pub.split("/").pop())}</a></span>` : ""}
         ${p.images?.length ? `<span><b>shots</b> ${p.images.length}</span>` : ""}
       </div>
       <div class="chips">${p.stack.map((k) => chipHTML(k)).join("")}</div>
@@ -948,6 +950,7 @@
     { name: "nohlsearch", alias: ["noh"], desc: "clear search highlight", run: () => clearHighlight() },
     { name: "terminal", alias: ["term", "sh", "shell", "zsh", "bash"], desc: "open the shell", run: () => openTerminal() },
     { name: "github", alias: ["gh", "source"], args: projectIds, desc: "open GitHub (or a project's repo)", run: (a) => openGithub(a) },
+    { name: "pub", alias: ["pubdev"], desc: "open Cairn UI on pub.dev", run: () => openPub(true) },
     { name: "linkedin", alias: ["li"], desc: "open LinkedIn", run: () => openUrl(S.data.profile.linkedin) },
     { name: "mail", alias: ["email"], desc: "write me an email", run: () => (location.href = `mailto:${S.data.profile.email}`) },
     { name: "yank", alias: ["y"], desc: "copy a link to this page", run: () => yank(location.href) },
@@ -1112,7 +1115,7 @@
       ]],
       ["Actions", [
         ["Enter", "open screenshots / link"],
-        ["o  O", "open source / live demo"],
+        ["o  O  p", "open source / live demo / pub.dev"],
         ["y  Y", "yank url / link to this page"],
         ["t", "cycle colorscheme"],
         ["`  :term", "open the shell"],
@@ -1224,6 +1227,7 @@
               `type:  ${p.category}`,
               `stack: ${p.stack.map((k) => stackOf(k).label).join(", ")}`,
               `repo:  ${p.github}`,
+              p.pub ? `pub:   ${p.pub}` : null,
               p.demo ? `demo:  ${p.demo}` : null,
               "",
               ...p.content.map(plain),
@@ -1804,6 +1808,7 @@
       Enter: () => activate(),
       o: () => openPrimary(),
       O: () => openDemo(),
+      p: () => openPub(),
       y: () => yankCurrent(),
       Y: () => yank(location.href),
       Escape: () => (S.hl ? clearHighlight() : msg("")),
@@ -1848,6 +1853,15 @@
     const p = S.data.projects[S.sel.projects];
     if (p.demo) openUrl(p.demo);
     else msg(`${esc(p.name)} has no hosted demo. <kbd>o</kbd> opens the source.`, "info");
+  }
+
+  function openPub(anywhere = false) {
+    const onProject = currentPanel().id === "projects";
+    const p = onProject ? S.data.projects[S.sel.projects] : null;
+    if (p?.pub) return openUrl(p.pub);
+    const pkg = S.data.projects.find((x) => x.pub);
+    if (anywhere && pkg) return openUrl(pkg.pub);
+    msg(onProject ? `${esc(p.name)} isn't a published package. <kbd>:pub</kbd> opens Cairn UI on pub.dev.` : "<kbd>:pub</kbd> opens Cairn UI on pub.dev", "info");
   }
 
   function yankCurrent() {

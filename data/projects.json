@@ -3,7 +3,7 @@
     {
       "id": "cairn-ui",
       "name": "Cairn UI",
-      "tagline": "An engineered Flutter component library",
+      "tagline": "An engineered Flutter component library, published on pub.dev",
       "date": "Sep 2026",
       "category": "flutter · design system",
       "github": "https://github.com/rlphjyson/cairn_ui",
@@ -33,15 +33,17 @@
         }
       ],
       "content": [
-        "A modern, accessible {{Flutter component library}} built on a design token system that is actually engineered.",
+        "A modern, accessible {{Flutter component library}} built on a design token system that is actually engineered, and {{published on pub.dev}} as cairn_ui.",
         "Colours are authored in {{OKLCH}} with a matched dark theme, the radius scale is derived proportionally from a single number, and the type scale survives text scaling.",
         "{{65 components}}, no runtime dependencies beyond Flutter itself, and {{golden tests}} in both themes holding all of it in place."
       ],
       "highlights": [
+        "Published on {{pub.dev}} with {{160/160 pub points}}, supporting Android, iOS, web, Windows, macOS and Linux",
         "No component hardcodes a number that should come from a token",
         "Every place CSS-shaped design meets Flutter's rendering model is resolved explicitly and documented",
         "80 golden images lock the light and dark output down"
-      ]
+      ],
+      "pub": "https://pub.dev/packages/cairn_ui"
     },
     {
       "id": "flutter-mcp-toolkit",

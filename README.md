@@ -1,4 +1,4 @@
-# Ralph Jason Burgos — Portfolio
+# Ralph Burgos — Portfolio
 
 Senior Software Engineer based in the Philippines, with 5+ years building production-grade, cross-platform apps for mobile and web.
 Flutter is my daily driver. I also build with Next.js, Go and FastAPI, and lately AI tooling on Claude.
@@ -33,7 +33,7 @@ Every view has a deep link, for example `/#/projects/roam`.
 
 | Project | What it is |
 | --- | --- |
-| [Cairn UI](https://github.com/rlphjyson/cairn_ui) | 65-component Flutter library on an engineered token system, held in place by golden tests |
+| [Cairn UI](https://github.com/rlphjyson/cairn_ui) | 65-component Flutter library on an engineered token system, held in place by golden tests. Published on [pub.dev](https://pub.dev/packages/cairn_ui) |
 | [Flutter MCP Toolkit](https://github.com/rlphjyson/flutter-mcp-toolkit) | 12 MCP servers for the Flutter lifecycle, plus a gateway and CLI |
 | [Cairn Site](https://github.com/rlphjyson/cairn_site) | Docs site for Cairn UI, built with Cairn UI ([live](https://rlphjyson.github.io/cairn_site/)) |
 | [MCP Toolkit AI](https://github.com/rlphjyson/mcp-toolkit-ai) | 17 MCP servers behind one gateway |

@@ -7,7 +7,7 @@
       "content": [
         "{{Flutter}} is my daily driver. I've shipped production apps to the {{App Store and Play Store}} and run a monorepo of {{5 production apps}}.",
         "On the web I build with {{React}} and {{Next.js}}, and lately {{Jaspr}} for server-rendered Dart.",
-        "I care about {{reusable UI systems}}: Cairn UI is a 65-component Flutter library with an engineered token system."
+        "I care about {{reusable UI systems}}: Cairn UI is a 65-component Flutter library with an engineered token system, published on {{pub.dev}}."
       ],
       "items": ["flutter", "dart", "bloc", "riverpod", "react", "reactnative", "nextjs", "typescript", "javascript", "jaspr", "tailwindcss", "electron", "genui", "html", "css"]
     },
